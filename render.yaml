@@ -1,8 +1,8 @@
 services:
   - type: web
-    name: drcmds-predictor-backend
+    name: serb-backend
     env: docker
-    buildCommand: docker build -t drcmds-predictor-backend .
+    buildCommand: docker build -t serb-backend .
     startCommand: docker run -p $PORT:8000 serb-backend
     envVars:
       - key: PORT

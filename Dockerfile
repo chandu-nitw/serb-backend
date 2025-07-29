@@ -18,5 +18,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the project files to the working directory
 COPY . .
 
-# Use PORT environment variable from Railway
+# Command to run the application
 CMD uvicorn main:app --host 0.0.0.0 --port ${PORT:-8000}
