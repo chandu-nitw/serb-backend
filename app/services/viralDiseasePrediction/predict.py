@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 from app.services.viralDiseasePrediction.preprocess import pad_sequences, one_hot_encoding
 
 # Load model
-MODEL_PATH = "app/models/viralDiseasePrediction/cnn_model_all.h5"
+MODEL_PATH = "app/models/viralDiseasePrediction/final_model.h5"
 model = load_model(MODEL_PATH)
 
 # Disease mapping
